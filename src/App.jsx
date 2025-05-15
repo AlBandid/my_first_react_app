@@ -1,6 +1,7 @@
 import './App.css'
 import Greeting from './components/Greeting.jsx'
 import { Farewell } from "./components/Farewell.jsx";
+import Person from "./components/Person.jsx";
 
 function ListItem(props) {
   return (
@@ -45,6 +46,7 @@ function App() {
   return (
     <>
       <h1>Hello world!</h1>
+      <Person />
       <Greeting/>
       <Button handleClick={()=>renderMessage("yay!")}/>
       <SimpleList items={myList} />
